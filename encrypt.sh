@@ -22,7 +22,7 @@ else
 	SCRIPT="$(basename "$(realpath "$0")")"
 	SCRIPT_DIR="$(dirname "$(realpath "$0")")"
 	cd $SCRIPT_DIR
-	. .config
+	. ./.config
 
 	if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
 		echo "Usage: $(basename $0) [OPTION]"
