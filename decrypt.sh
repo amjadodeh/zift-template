@@ -16,7 +16,7 @@ if [ $sourced = 1 ]; then
 else
 	SCRIPT_DIR="$(dirname "$(realpath "$0")")"
 	cd $SCRIPT_DIR
-	. ./config.sh
+	. .config
 	PATTERN="${PATTERN}.tar.gz.gpg"
 
 	if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
